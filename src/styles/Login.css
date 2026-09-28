@@ -1,0 +1,268 @@
+
+.form-container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin: 0 0 6px;
+    font-size: 30px;
+    color: #222;
+}
+
+.form-container > p {
+    text-align: center;
+    margin: 0 0 18px;
+    color: #777;
+    font-size: 14px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-container h3 {
+    display: grid;
+    grid-template-columns: 190px 1fr 10px;
+    align-items: center;
+    gap: 8px;
+    margin: 2px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.2;
+}
+
+.form-container h3 span {
+    width: 100%;
+    display: block;
+}
+body:has(.form-container) {
+    background: #eef4ff;
+}
+
+body:has(.form-container) #root {
+    min-height: 100vh;
+    background: #eef4ff;
+}
+
+.form-container input:not([type="checkbox"]),
+.form-container select {
+    width: 100%;
+    height: 38px;
+    padding: 7px 11px;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    outline: none;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-container input:not([type="checkbox"]):focus,
+.form-container select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+.form-container input::placeholder {
+    color: #aaa;
+}
+
+.form-container h2 {
+    margin: 10px 0 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 20px;
+    color: #222;
+}
+
+.required-star {
+    color: red;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: -4px;
+}
+
+#box {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    accent-color: #2563eb;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.form-container h4 {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.form-container button {
+    height: 40px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#submit {
+    background: #2563eb;
+    color: white;
+}
+
+#submit:hover {
+    background: #1d4ed8;
+}
+
+#reset {
+    background: #e5e7eb;
+    color: #333;
+}
+
+#reset:hover {
+    background: #d1d5db;
+}
+
+.error {
+    margin: 2px 0 5px !important;
+    color: red !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.success {
+    margin: 5px 0 0 !important;
+    color: green !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+body.dark-mode .form-container {
+    background: #2a3443;
+    color: white;
+}
+body.dark-mode .form-container h1,
+body.dark-mode .form-container h2,
+body.dark-mode .form-container h3,
+body.dark-mode .form-container label {
+    color: white;
+}
+
+body.dark-mode .form-container input,
+body.dark-mode .form-container select,
+body.dark-mode .form-container textarea {
+    background: #111827;
+    color: white;
+    border-color: #374151;
+}
+
+body.dark-mode .form-container input::placeholder,
+body.dark-mode .form-container textarea::placeholder {
+    color: #9ca3af;
+}
+
+body.dark-mode .form-container input:focus,
+body.dark-mode .form-container select:focus,
+body.dark-mode .form-container textarea:focus {
+    border-color: #60a5fa;
+}
+
+body.dark-mode .form-container p {
+    color: #d1d5db;
+}
+
+@media (max-width: 700px) {
+
+    .form-container {
+        width: 94%;
+        margin: 20px auto;
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .form-container h1 {
+        font-size: 24px;
+    }
+
+    .form-container > p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .form-container h3 {
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .form-container h3 span {
+        flex-basis: 100%;
+    }
+
+    .required-star {
+        margin-left: 2px;
+        margin-top: -28px;
+    }
+
+    .form-container h2 {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .form-buttons {
+        width: 100%;
+    }
+
+    .form-container button {
+        flex: 1;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .form-container {
+        width: 96%;
+        padding: 18px 12px;
+    }
+
+    .form-container h1 {
+        font-size: 21px;
+    }
+
+    .form-container input:not([type="checkbox"]),
+    .form-container select {
+        height: 36px;
+        font-size: 13px;
+    }
+
+    .form-container h4 {
+        align-items: flex-start;
+        line-height: 1.4;
+    }
+}
+

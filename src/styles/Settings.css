@@ -1,0 +1,170 @@
+.settings-page {
+    padding: 45px 20px;
+    background: #f5f7fb;
+    transition: 0.3s ease;
+}
+
+.settings-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.settings-header {
+    margin-bottom: 25px;
+}
+
+.settings-header h1 {
+    margin: 0 0 5px;
+    font-size: 32px;
+}
+
+.settings-header p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.settings-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 7px;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 14px;
+}
+
+.settings-section {
+    margin-bottom: 18px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.settings-section h2 {
+    margin: 0 0 12px;
+    font-size: 19px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    border-top: 1px solid #eee;
+}
+
+.setting-text h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+}
+
+.setting-text p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.toggle {
+    min-width: 55px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 20px;
+    background: #ddd;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle.on {
+    background: #2563eb;
+    color: white;
+}
+
+.profile-link {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.settings-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.settings-buttons button {
+    flex: 1;
+    height: 42px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.settings-buttons button:last-child {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.settings-buttons button:hover {
+    opacity: 0.9;
+}
+
+.settings-page.dark {
+    background: #111827;
+    color: white;
+}
+
+.settings-page.dark .settings-section {
+    background: #1f2937;
+}
+
+.settings-page.dark .settings-header p,
+.settings-page.dark .setting-text p {
+    color: #bbb;
+}
+
+.settings-page.dark .setting-item {
+    border-color: #374151;
+}
+
+.settings-page.dark {
+    background: #111827;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .settings-page {
+        padding: 30px 12px;
+    }
+
+    .settings-container {
+        width: 95%;
+    }
+
+    .settings-section {
+        padding: 16px;
+    }
+
+    .setting-item {
+        gap: 10px;
+    }
+
+    .settings-header h1 {
+        font-size: 27px;
+    }
+
+    .settings-buttons {
+        flex-direction: column;
+    }
+}

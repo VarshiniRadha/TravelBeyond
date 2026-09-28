@@ -1,0 +1,388 @@
+.destination-details-page {
+    background: #f8f8fc;
+    min-height: 100vh;
+    color: #171725;
+    padding-bottom: 50px;
+}
+
+.details-top {
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 22px 0;
+}
+
+.details-top a {
+    color: green;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.details-hero {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: #dbeafe;
+}
+
+.details-hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+}
+
+.details-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.68), rgba(0,0,0,.05));
+    display: flex;
+    align-items: end;
+}
+
+.details-hero-text {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto 45px;
+    color: white;
+}
+
+.details-hero-text > span {
+    display: inline-block;
+    background: #5b2bea;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details-hero-text h1 {
+    margin: 0 0 8px;
+    font-size: 48px;
+}
+
+.details-hero-text p {
+    max-width: 620px;
+    margin: 7px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.details-content {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 28px;
+}
+
+.details-main {
+    min-width: 0;
+}
+
+.details-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.details-highlights > div {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details-highlights span {
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+    background: #f0ebff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-highlights strong {
+    font-size: 14px;
+}
+
+.details-highlights small {
+    color: #999;
+    font-size: 11px;
+}
+
+.about-destination {
+    margin-top: 40px;
+}
+
+.section-label {
+    color: #5b2bea;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-destination h2,
+.places-section h2 {
+    font-size: 27px;
+    margin: 7px 0 12px;
+}
+
+.about-destination p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.booking-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+    position: sticky;
+    top: 20px;
+}
+
+.booking-box > span {
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.booking-box h2 {
+    margin: 7px 0 0;
+    color: #4c20d8;
+    font-size: 27px;
+}
+
+.booking-box > p {
+    color: #999;
+    font-size: 11px;
+    margin: 2px 0 20px;
+}
+
+.booking-box > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #5b2bea;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.booking-features {
+    border-top: 1px solid #eee;
+    margin-top: 18px;
+    padding-top: 12px;
+}
+
+.booking-features p {
+    color: #666;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.places-section {
+    margin-top: 42px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    margin-bottom: 0;
+}
+
+.section-title > span {
+    color: #5b2bea;
+    font-size: 12px;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.place-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+}
+
+.place-card img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    display: block;
+}
+
+.place-card h3 {
+    font-size: 12px;
+    margin: 12px;
+}
+
+.why-visit {
+    margin-top: 50px;
+    padding: 45px 5%;
+    background: #f0ebff;
+    text-align: center;
+}
+
+.why-visit > span {
+    color: #5b2bea;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.why-visit h2 {
+    margin: 8px 0 30px;
+    font-size: 28px;
+}
+
+.why-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-grid strong {
+    font-size: 27px;
+}
+
+.why-grid h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.destination-not-found {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination-not-found a {
+    color: #5b2bea;
+}
+
+body.dark-mode .destination-details-page {
+    background: #111827;
+}
+
+body.dark-mode .details-top a {
+    color: #d1d5db;
+}
+
+body.dark-mode .details-highlights > div,
+body.dark-mode .booking-box,
+body.dark-mode .place-card {
+    background: #1f2937;
+}
+
+body.dark-mode .details-highlights strong,
+body.dark-mode .about-destination h2,
+body.dark-mode .places-section h2,
+body.dark-mode .place-card h3 {
+    color: white;
+}
+
+body.dark-mode .about-destination p,
+body.dark-mode .booking-features p {
+    color: #9ca3af;
+}
+
+body.dark-mode .booking-features {
+    border-color: #374151;
+}
+
+body.dark-mode .why-visit {
+    background: #1e1b4b;
+}
+
+body.dark-mode .why-visit h2,
+body.dark-mode .why-grid h3 {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .details-hero {
+        height: 390px;
+    }
+
+    .details-hero-text h1 {
+        font-size: 36px;
+    }
+
+    .details-content {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-box {
+        position: static;
+    }
+
+    .details-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .details-hero {
+        height: 350px;
+    }
+
+    .details-hero-text h1 {
+        font-size: 30px;
+    }
+
+    .details-hero-text {
+        margin-bottom: 25px;
+    }
+
+    .details-highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,314 @@
+.booking-page {
+    min-height: 100vh;
+    padding: 45px 20px;
+    background: #f4f5f8;
+}
+
+.booking-layout {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 30px;
+}
+
+.booking-form-card,
+.booking-summary {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.booking-form-card h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #20242d;
+}
+
+.booking-subtitle {
+    color: #8a8f98;
+    margin: 8px 0 25px;
+    font-size: 14px;
+}
+
+.booking-form-card h3 {
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    padding: 12px 13px;
+    border: 1px solid #e1e3e8;
+    border-radius: 7px;
+    background: #f5f6f8;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #6d28d9;
+    background: white;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 25px 0 18px;
+}
+
+.terms input {
+    width: 17px;
+    height: 17px;
+    accent-color: #6d28d9;
+    cursor: pointer;
+}
+
+.terms label {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+}
+
+.book-now-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #6d28d9;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.book-now-btn:hover {
+    background: #5b21b6;
+}
+
+.booking-summary h2 {
+    margin: 0 0 22px;
+    font-size: 21px;
+    color: #20242d;
+}
+
+.summary-destination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 18px;
+}
+
+.summary-destination > span {
+    font-size: 30px;
+}
+
+.summary-destination h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.summary-destination p {
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item > span {
+    font-size: 18px;
+}
+
+.summary-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.summary-item small {
+    color: #999;
+    font-size: 11px;
+}
+
+.summary-item strong {
+    color: #333;
+    font-size: 13px;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.summary-total span {
+    color: #777;
+}
+
+.summary-total strong {
+    color: #6d28d9;
+}
+
+.your-bookings {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.your-bookings h2 {
+    color: #20242d;
+    margin-bottom: 18px;
+}
+
+.booking-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.booking-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.booking-card h3 {
+    color: #6d28d9;
+    margin: 0 0 15px;
+}
+
+.booking-card p {
+    margin: 7px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.booking-card strong {
+    color: #333;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.booking-actions button {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.booking-actions button:first-child {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.booking-actions button:last-child {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.no-bookings {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #888;
+}
+
+body.dark-mode .booking-page {
+    background: #111827;
+}
+
+body.dark-mode .booking-form-card,
+body.dark-mode .booking-summary,
+body.dark-mode .booking-card,
+body.dark-mode .no-bookings {
+    background: #1f2937;
+}
+
+body.dark-mode .booking-form-card h1,
+body.dark-mode .booking-form-card h3,
+body.dark-mode .booking-summary h2,
+body.dark-mode .your-bookings h2,
+body.dark-mode .summary-destination h3,
+body.dark-mode .booking-card p,
+body.dark-mode .booking-card strong {
+    color: white;
+}
+
+body.dark-mode .form-group label,
+body.dark-mode .summary-item strong {
+    color: rgb(251, 248, 248);
+}
+
+body.dark-mode .form-group input {
+    background: #111827;
+    color: white;
+    border-color: #374151;
+}
+body.dark-mode .booking-card strong {
+    color: #cbb5ef;
+}
+
+@media (max-width: 700px) {
+    .booking-page {
+        padding: 30px 12px;
+    }
+
+    .booking-layout {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .your-bookings {
+        width: 100%;
+    }
+
+    .booking-list {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+html,body,#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 65px;
+    padding: 35px 5%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: transparent;
+}
+
+.home-nav h1 {
+    margin: 0 auto 0 0;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFD700 40%, #FF8C00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-nav a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}
+
+.home-nav a:hover {
+    color: #5097f3;
+}
+
+.home-nav button {
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.home-nav button:hover {
+    background: white;
+    color: #222;
+}
+
+.normal-nav {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.normal-nav h1 {
+    margin: 0 auto 0 0;
+    color: #222;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+
+.normal-nav a {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.normal-nav a:hover {
+    color: #2563eb;
+}
+
+.normal-nav button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #2563eb;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.normal-nav button:hover {
+    background: #1d4ed8;
+}
+
+body.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode .normal-nav {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .normal-nav h1 {
+    color: white;
+}
+
+body.dark-mode .normal-nav a {
+    color: #e5e7eb;
+}
+
+body.dark-mode .normal-nav a:hover {
+    color: #93c5fd;
+}
+
+@media (max-width: 800px) {
+
+    .home-nav,
+    .normal-nav {
+        padding: 14px 4%;
+        gap: 15px;
+    }
+
+    .home-nav h1,
+    .normal-nav h1 {
+        font-size: 22px;
+    }
+
+    .home-nav a,
+    .normal-nav a {
+        font-size: 12px;
+    }
+
+    .home-nav button,
+    .normal-nav button {
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .home-nav,
+    .normal-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .home-nav h1,
+    .normal-nav h1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+

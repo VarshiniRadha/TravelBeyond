@@ -1,0 +1,251 @@
+.profile-container {
+    padding: 35px 20px;
+    background: #f6f8fd;
+    height: max-content;
+}
+
+.profile-card {
+    width: 900%;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+.profile-image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8efff;
+    font-size: 45px;
+    overflow: hidden;
+    border: 3px solid #e8efff;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image span {
+    font-size: 45px;
+}
+
+.change-photo {
+    margin: 7px 0 0;
+    color: #2563eb;
+    font-size: 11px;
+    cursor: pointer;
+}
+.profile-header h1 {
+    margin: 10px 0 3px;
+    font-size: 25px;
+}
+
+.profile-header p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 11px 13px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.detail span {
+    color: rgb(74, 2, 74);
+}
+
+.detail strong {
+    color: #222;
+    text-align: right;
+}
+
+.profile-buttons,
+.edit-buttons {
+    display: flex;
+    gap: 150px;
+    margin-top: 25px;
+}
+
+.profile-buttons button,
+.edit-buttons button {
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    background: #2563eb;
+    color: white;
+}
+
+.profile-buttons .logout-btn {
+    background: #ef4444;
+}
+
+.profile-buttons button:hover {
+    opacity: 0.9;
+}
+
+.not-logged {
+    max-width: 500px;
+    margin: 100px auto;
+    margin-bottom: 170px;
+    padding: 40px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.not-logged h1 {
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+.not-logged p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.success-message {
+    padding: 9px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 6px;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 14px;
+}
+
+.edit-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.edit-profile h2 {
+    margin: 0 0 8px;
+}
+
+.edit-profile label {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit-profile input,
+.edit-profile select {
+    width: 100%;
+    height: 38px;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.edit-profile input:focus,
+.edit-profile select:focus {
+    border-color: #2563eb;
+}
+
+.edit-buttons button:last-child {
+    background: #e5e7eb;
+    color: #333;
+}
+
+body.dark-mode .profile-container {
+    background: #111827;
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .not-logged {
+    background: #1f2937;
+    color: white;
+}
+
+body.dark-mode .profile-header p {
+    color: #bbb;
+}
+
+body.dark-mode .detail {
+    border-color: #374151;
+}
+
+body.dark-mode .detail strong {
+    color: white;
+}
+
+body.dark-mode .edit-profile input,
+body.dark-mode .edit-profile select {
+    background: #111827;
+    color: white;
+    border-color: #374151;
+}
+
+@media (max-width: 600px) {
+
+    .profile-container {
+        padding: 20px 10px;
+    }
+
+    .profile-card {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .detail {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .detail strong {
+        text-align: left;
+    }
+
+    .profile-buttons,
+    .edit-buttons {
+        flex-direction: column;
+    }
+}
+
