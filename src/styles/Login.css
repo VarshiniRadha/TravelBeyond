@@ -194,6 +194,13 @@ body.dark-mode .form-container textarea:focus {
 body.dark-mode .form-container p {
     color: #d1d5db;
 }
+body.dark-mode:has(.form-container) {
+    background: #111827;
+}
+
+body.dark-mode:has(.form-container) #root {
+    background: #111827;
+}
 
 @media (max-width: 700px) {
 

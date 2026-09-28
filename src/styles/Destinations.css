@@ -5,6 +5,7 @@
     color: #171725;
     padding-bottom: 60px;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .destinations-header {
@@ -357,7 +358,7 @@ body.dark-mode .destination-filters button {
 }
 
 body.dark-mode .destination-heading > span {
-    color: #aaa;
+    color: #d7d5d5;
 }
 
 body.dark-mode .api-guide-card,
@@ -372,9 +373,11 @@ body.dark-mode .api-guide-info h3 {
 }
 
 body.dark-mode .api-guide-info p strong {
-    color: #ddd;
+    color: #f9f8f8;
 }
-
+body.dark-mode .api-guide-info p span {
+    color: #d8d8d8;
+}
 
 @media (max-width: 1000px) {
     .destination-grid {

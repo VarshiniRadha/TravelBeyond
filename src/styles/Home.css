@@ -378,7 +378,7 @@ body.dark-mode .why-card {
 }
 
 body.dark-mode .why-card h3 {
-    color: white;
+    color: rgb(241, 236, 236);
 }
 
 body.dark-mode .why-card p {
@@ -420,7 +420,22 @@ body.dark-mode .footer-bottom {
     border-color: #374151;
     color: #999;
 }
+body.dark-mode .why-section .why-card {
+    background: #1e2a43 !important;
+    color: white !important;
+}
 
+body.dark-mode .why-section .why-card h3 {
+    color: #f1ecec !important;
+}
+
+body.dark-mode .why-section .why-card p {
+    color: #bbb !important;
+}
+
+body.dark-mode .section-title h2 {
+    color: #bbb !important;
+}
 .home > * {
     animation: homeSlideRight 0.8s ease both;
 }

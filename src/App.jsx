@@ -18,7 +18,7 @@ import Footer from "./Routes/Footer.jsx";
 function App() {
 
   return (
-        <BrowserRouter>
+        <BrowserRouter basename="/TravelBeyond">
             <AppContent />
         </BrowserRouter>
     );
